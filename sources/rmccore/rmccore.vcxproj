@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base\coreconst.cpp" />
+    <ClCompile Include="base\coreinit.cpp" />
+    <ClCompile Include="crypto\aes.cpp" />
+    <ClCompile Include="crypto\crypto.cpp" />
+    <ClCompile Include="crypto\dh.cpp" />
+    <ClCompile Include="crypto\md5.cpp" />
+    <ClCompile Include="crypto\rsa.cpp" />
+    <ClCompile Include="crypto\sha.cpp" />
+    <ClCompile Include="format\localfile.cpp" />
+    <ClCompile Include="format\nxlfile.cpp" />
+    <ClCompile Include="format\nxlpolicy.cpp" />
+    <ClCompile Include="network\httpClient.cpp" />
+    <ClCompile Include="network\httpConst.cpp" />
+    <ClCompile Include="policy\condition.cpp" />
+    <ClCompile Include="policy\obligation.cpp" />
+    <ClCompile Include="restful\rmactivitylog.cpp" />
+    <ClCompile Include="restful\rmcertificate.cpp" />
+    <ClCompile Include="restful\rmclassification.cpp" />
+    <ClCompile Include="restful\rmheartbeat.cpp" />
+    <ClCompile Include="restful\RMHttpRequest.cpp" />
+    <ClCompile Include="restful\rmmembership.cpp" />
+    <ClCompile Include="restful\rmmydrive.cpp" />
+    <ClCompile Include="restful\rmnxlfile.cpp" />
+    <ClCompile Include="restful\rmproduct.cpp" />
+    <ClCompile Include="restful\rmproject.cpp" />
+    <ClCompile Include="restful\rmprojectfile.cpp" />
+    <ClCompile Include="restful\rmrecipients.cpp" />
+    <ClCompile Include="restful\rmsharedworkspace.cpp" />
+    <ClCompile Include="restful\rmsyspara.cpp" />
+    <ClCompile Include="restful\rmtenant.cpp" />
+    <ClCompile Include="restful\rmtoken.cpp" />
+    <ClCompile Include="restful\rmuser.cpp" />
+    <ClCompile Include="rmccore.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="utils\base64.cpp" />
+    <ClCompile Include="utils\crc.cpp" />
+    <ClCompile Include="utils\nxtime.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\rmccore\base\assert.h" />
+    <ClInclude Include="..\include\rmccore\base\coredefs.h" />
+    <ClInclude Include="..\include\rmccore\base\coreerror.h" />
+    <ClInclude Include="..\include\rmccore\base\coreinit.h" />
+    <ClInclude Include="..\include\rmccore\base\coremacros.h" />
+    <ClInclude Include="..\include\rmccore\base\coreretval.h" />
+    <ClInclude Include="..\include\rmccore\crypto\aes.h" />
+    <ClInclude Include="..\include\rmccore\crypto\crypto.h" />
+    <ClInclude Include="..\include\rmccore\crypto\dh.h" />
+    <ClInclude Include="..\include\rmccore\crypto\md5.h" />
+    <ClInclude Include="..\include\rmccore\crypto\rsa.h" />
+    <ClInclude Include="..\include\rmccore\crypto\sha.h" />
+    <ClInclude Include="..\include\rmccore\format\localfile.h" />
+    <ClInclude Include="..\include\rmccore\format\nxlfile.h" />
+    <ClInclude Include="..\include\rmccore\format\nxlfmt.h" />
+    <ClInclude Include="..\include\rmccore\format\nxlpolicy.h" />
+    <ClInclude Include="..\include\rmccore\format\nxlrights.h" />
+    <ClInclude Include="..\include\rmccore\network\httpClient.h" />
+    <ClInclude Include="..\include\rmccore\network\httpConst.h" />
+    <ClInclude Include="..\include\rmccore\policy\condition.h" />
+    <ClInclude Include="..\include\rmccore\policy\obligation.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmactivitylog.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmcertificate.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmclassification.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmheartbeat.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmmembership.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmmydrive.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmnxlfile.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmproduct.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmproject.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmprojectfile.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmprojectfiles.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmrecipients.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmrestbase.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmsharedworkspace.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmsyspara.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmtenant.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmtoken.h" />
+    <ClInclude Include="..\include\rmccore\restful\rmuser.h" />
+    <ClInclude Include="..\include\rmccore\rmccore.h" />
+    <ClInclude Include="..\include\rmccore\utils\base64.h" />
+    <ClInclude Include="..\include\rmccore\utils\crc.h" />
+    <ClInclude Include="..\include\rmccore\utils\string.h" />
+    <ClInclude Include="..\include\rmccore\utils\time.h" />
+    <ClInclude Include="restful\rmhttprequest.h" />
+    <ClInclude Include="restful\rmrestkey.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E24587F3-D9D7-4BA0-AC41-F435F66E1D5E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>rmccore</RootNamespace>
+    <WindowsTargetPlatformVersion>$(LatestTargetPlatformVersion)</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\objs\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\objs\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\objs\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\objs\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>./;../include;../common/eframework.R4.0;../../external/openssl/$(Platform.ToLower().Replace("win32", "x86"))/inc32;../../external/jsonformodernc++/single_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>celog2.lib;cebrain.lib;libboost_system-vc140-mt-sgd-1_65_1.lib;libboost_filesystem-vc140-mt-sgd-1_65_1.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\build\build.msvc\$(Platform)_$(Configuration)\;..\..\external\boost\lib\$(Platform.ToLower().Replace("win32", "x86"))\$(Configuration)\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>./;../include;../common/eframework.R4.0;../../external/openssl/$(Platform.ToLower().Replace("win32", "x86"))/inc32;../../external/jsonformodernc++/single_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>celog2.lib;cebrain.lib;libboost_system-vc140-mt-sgd-1_65_1.lib;libboost_filesystem-vc140-mt-sgd-1_65_1.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\build\build.msvc\$(Platform)_$(Configuration)\;..\..\external\boost\lib\$(Platform.ToLower().Replace("win32", "x86"))\$(Configuration)\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>./;../include;../common/eframework.R4.0;../../external/openssl/$(Platform.ToLower().Replace("win32", "x86"))/inc32;../../external/jsonformodernc++/single_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>celog2.lib;cebrain.lib;libboost_system-vc140-mt-s-1_65_1.lib;libboost_filesystem-vc140-mt-s-1_65_1.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\build\build.msvc\$(Platform)_$(Configuration)\;..\..\external\boost\lib\$(Platform.ToLower().Replace("win32", "x86"))\$(Configuration)\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>./;../include;../common/eframework.R4.0;../../external/openssl/$(Platform.ToLower().Replace("win32", "x86"))/inc32;../../external/jsonformodernc++/single_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Lib>
+      <AdditionalDependencies>celog2.lib;cebrain.lib;libboost_system-vc140-mt-s-1_65_1.lib;libboost_filesystem-vc140-mt-s-1_65_1.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\build\build.msvc\$(Platform)_$(Configuration)\;..\..\external\boost\lib\$(Platform.ToLower().Replace("win32", "x86"))\$(Configuration)\</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

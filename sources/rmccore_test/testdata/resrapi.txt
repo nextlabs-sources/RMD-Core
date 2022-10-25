@@ -1,0 +1,41 @@
+
+[LOGIN]
+
+curl --data "email=gavin.ye@nextlabs.com&password=C27B83A22F39DCEB435ED6D08EC42748" https://skydrm.com/rms --header "Content-Type:application/x-www-form-urlencoded"
+
+{
+	"statusCode":200,
+	"message":"Authorized",
+	"serverTime":1513500276546,
+	"extra": {
+		"userId":99,
+		"ticket":"50650569A8A15C7403DCF5C72B9E2601",
+		"tenantId":"8a0ebf44-dfdd-4261-85a3-c6dbc665358d",
+		"ttl":1513586676542,
+		"name":"Gavin Ye",
+		"email":"gavin.ye@nextlabs.com",
+		"preferences": {
+			"lPage":"MANAGE_REPO",
+			"homeTour":true
+		},
+		"idpType":0,
+		"memberships": [
+			{
+				"id":"m130@jt2go",
+				"type":0,
+				"tenantId":"3c4ae462-6e28-465b-850d-97820e794038",
+				"projectId":3
+			},
+			{
+				"id":"m133@skydrm.com",
+				"type":0,
+				"tenantId":"8a0ebf44-dfdd-4261-85a3-c6dbc665358d",
+				"projectId":1
+			}
+		],
+		"defaultTenant":"skydrm.com",
+		"defaultTenantUrl":"https://skydrm.com/rms"
+	}
+}
+
+[]

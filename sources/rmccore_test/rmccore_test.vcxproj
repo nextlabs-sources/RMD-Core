@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C56D1A70-C6DC-4281-808A-19792FDA0681}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>rmccore_test</RootNamespace>
+    <WindowsTargetPlatformVersion>$(LatestTargetPlatformVersion)</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\objs\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\objs\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\objs\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build.msvc\$(Platform)_$(Configuration)\objs\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>./;../include;../../external/openssl/$(Platform.ToLower().Replace("win32", "x86"))/inc32;../../external/boost/;../../external/jsonformodernc++/single_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);../../external/boost/lib/$(Platform.ToLower().Replace("win32", "x86"))/$(Configuration.ToLower());../../external/openssl/$(Platform.ToLower().Replace("win32", "x86"))/lib/$(Configuration.ToLower())</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libeay32.lib;cebrain.lib;celog2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(ProjectDir)testdata\RMSTokenTest.txt $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\RMSTokenTest.txt.nxl $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\ccn.doc $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\ZeroExt1 $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\ZeroExt2 $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\TwoExt1.aaa.bbb $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\TwoExt2.ccc.ddd $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(SolutionDir)..\external\openssl\$(Platform.ToLower().Replace("win32", "x86"))\lib\$(Configuration.ToLower())\libeay32.dll $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>./;../include;../../external/openssl/$(Platform.ToLower().Replace("win32", "x86"))/inc32;../../external/boost/;../../external/jsonformodernc++/single_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);../../external/boost/lib/$(Platform.ToLower().Replace("win32", "x86"))/$(Configuration.ToLower());../../external/openssl/$(Platform.ToLower().Replace("win32", "x86"))/lib/$(Configuration.ToLower())</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libeay32.lib;cebrain.lib;celog2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(ProjectDir)testdata\RMSTokenTest.txt $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\RMSTokenTest.txt.nxl $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\ccn.doc $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\ZeroExt1 $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\ZeroExt2 $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\TwoExt1.aaa.bbb $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\TwoExt2.ccc.ddd $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(SolutionDir)..\external\openssl\$(Platform.ToLower().Replace("win32", "x86"))\lib\$(Configuration.ToLower())\libeay32.dll $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>./;../include;../../external/openssl/$(Platform.ToLower().Replace("win32", "x86"))/inc32;../../external/boost/;../../external/jsonformodernc++/single_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);../../external/boost/lib/$(Platform.ToLower().Replace("win32", "x86"))/$(Configuration.ToLower());../../external/openssl/$(Platform.ToLower().Replace("win32", "x86"))/lib/$(Configuration.ToLower())</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libeay32.lib;cebrain.lib;celog2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(ProjectDir)testdata\RMSTokenTest.txt $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\RMSTokenTest.txt.nxl $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\ccn.doc $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\ZeroExt1 $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\ZeroExt2 $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\TwoExt1.aaa.bbb $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\TwoExt2.ccc.ddd $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(SolutionDir)..\external\openssl\$(Platform.ToLower().Replace("win32", "x86"))\lib\$(Configuration.ToLower())\libeay32.dll $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>./;../include;../../external/openssl/$(Platform.ToLower().Replace("win32", "x86"))/inc32;../../external/boost/;../../external/jsonformodernc++/single_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);../../external/boost/lib/$(Platform.ToLower().Replace("win32", "x86"))/$(Configuration.ToLower());../../external/openssl/$(Platform.ToLower().Replace("win32", "x86"))/lib/$(Configuration.ToLower())</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libeay32.lib;cebrain.lib;celog2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y $(ProjectDir)testdata\RMSTokenTest.txt $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\RMSTokenTest.txt.nxl $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\ccn.doc $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\ZeroExt1 $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\ZeroExt2 $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\TwoExt1.aaa.bbb $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(ProjectDir)testdata\TwoExt2.ccc.ddd $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\
+copy /Y $(SolutionDir)..\external\openssl\$(Platform.ToLower().Replace("win32", "x86"))\lib\$(Configuration.ToLower())\libeay32.dll $(SolutionDir)build.msvc\$(Platform)_$(Configuration)\</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aes_test.cpp" />
+    <ClCompile Include="dh_test.cpp" />
+    <ClCompile Include="fips_test.cpp" />
+    <ClCompile Include="nxlfile_test.cpp" />
+    <ClCompile Include="rmactivitylog_test.cpp" />
+    <ClCompile Include="rmccore_test.cpp" />
+    <ClCompile Include="rmcertificate_test.cpp" />
+    <ClCompile Include="rmheartbeat_test.cpp" />
+    <ClCompile Include="rmmembership_test.cpp" />
+    <ClCompile Include="rmmydrive_test.cpp" />
+    <ClCompile Include="rmnxlfile_test.cpp" />
+    <ClCompile Include="rmproduct_test.cpp" />
+    <ClCompile Include="rmproject_test.cpp" />
+    <ClCompile Include="rmrecipients_test.cpp" />
+    <ClCompile Include="rmsharedworkspace_test.cpp" />
+    <ClCompile Include="rmsysparam_test.cpp" />
+    <ClCompile Include="rmtenant_test.cpp" />
+    <ClCompile Include="rmtoken_test.cpp" />
+    <ClCompile Include="rmuser_test.cpp" />
+    <ClCompile Include="sha_test.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\sources\rmccore\rmccore.vcxproj">
+      <Project>{e24587f3-d9d7-4ba0-ac41-f435f66e1d5e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="rmccore_test.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

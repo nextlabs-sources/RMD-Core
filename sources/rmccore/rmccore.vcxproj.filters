@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\base">
+      <UniqueIdentifier>{6b7e7470-f3a3-410a-b17c-91157e688140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\network">
+      <UniqueIdentifier>{dc2a00b7-0c9a-42d0-ac83-bcd0881c8989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\base">
+      <UniqueIdentifier>{70b11b01-d128-4fa5-9579-748b59813bc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\network">
+      <UniqueIdentifier>{45961f41-4fc9-4951-9ed9-3bd3a02570ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{c32e23b0-b751-4af4-a445-84c363cfc5c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\crypto">
+      <UniqueIdentifier>{97480aa4-003b-45bb-8375-3e42133ee845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{02bcf8cf-6280-4153-a566-c0fe9bcd2a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\crypto">
+      <UniqueIdentifier>{726e9270-a802-4610-a785-44c4e2a2e2f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\format">
+      <UniqueIdentifier>{55112c56-e4de-4f45-881a-cdf7c8616eaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\format">
+      <UniqueIdentifier>{66be8746-8eb2-461a-9fbd-1d601d7fecae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\restful">
+      <UniqueIdentifier>{004d646f-4519-47e1-955e-88335dae18e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\restful">
+      <UniqueIdentifier>{58e45047-1e09-4acf-89c9-6674f5eac2e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\policy">
+      <UniqueIdentifier>{e2711a52-94e5-4a39-b71f-89dbc93cb409}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\policy">
+      <UniqueIdentifier>{f170f3dd-4378-4474-8f97-6a02865d1fe6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="crypto\md5.cpp">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\rsa.cpp">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\sha.cpp">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\aes.cpp">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="format\nxlfile.cpp">
+      <Filter>Source Files\format</Filter>
+    </ClCompile>
+    <ClCompile Include="network\httpConst.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\base64.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\crc.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmtenant.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmmembership.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmuser.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\crypto.cpp">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmtoken.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto\dh.cpp">
+      <Filter>Source Files\crypto</Filter>
+    </ClCompile>
+    <ClCompile Include="network\httpClient.cpp">
+      <Filter>Source Files\network</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\RMHttpRequest.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="format\nxlpolicy.cpp">
+      <Filter>Source Files\format</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmnxlfile.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="format\localfile.cpp">
+      <Filter>Source Files\format</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmcertificate.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmsyspara.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmrecipients.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmactivitylog.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\nxtime.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="policy\obligation.cpp">
+      <Filter>Source Files\policy</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmheartbeat.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmmydrive.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmproduct.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="base\coreconst.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\coreinit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rmccore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="policy\condition.cpp">
+      <Filter>Source Files\policy</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmproject.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmprojectfile.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmclassification.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+    <ClCompile Include="restful\rmsharedworkspace.cpp">
+      <Filter>Source Files\restful</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\rmccore\base\assert.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\crypto\md5.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\crypto\rsa.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\crypto\sha.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\crypto\aes.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\crypto\crypto.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\network\httpConst.h">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\network\httpClient.h">
+      <Filter>Header Files\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\utils\crc.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\utils\base64.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\rmccore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\format\nxlfile.h">
+      <Filter>Header Files\format</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\format\nxlfmt.h">
+      <Filter>Header Files\format</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmrestbase.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmtenant.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="restful\rmrestkey.h">
+      <Filter>Source Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmmembership.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmuser.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\utils\string.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmtoken.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\crypto\dh.h">
+      <Filter>Header Files\crypto</Filter>
+    </ClInclude>
+    <ClInclude Include="restful\rmhttprequest.h">
+      <Filter>Source Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\format\nxlrights.h">
+      <Filter>Header Files\format</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\format\nxlpolicy.h">
+      <Filter>Header Files\format</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\format\localfile.h">
+      <Filter>Header Files\format</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmnxlfile.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmcertificate.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmsyspara.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmrecipients.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmactivitylog.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\utils\time.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\policy\obligation.h">
+      <Filter>Header Files\policy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmheartbeat.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmmydrive.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmproduct.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\base\coredefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\base\coreerror.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\base\coremacros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\base\coreretval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\policy\condition.h">
+      <Filter>Header Files\policy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmproject.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmprojectfiles.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmprojectfile.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\base\coreinit.h">
+      <Filter>Header Files\base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmclassification.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\rmccore\restful\rmsharedworkspace.h">
+      <Filter>Header Files\restful</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
